@@ -4,6 +4,12 @@ html {
 
 body {
     height: 100%;
+    color:green;
+    background-image:url("https://ih0.redbubble.net/image.106530266.8493/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u7.jpg");
+    animation-name: backGround1;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
     
 }
 a {
@@ -12,8 +18,23 @@ a {
 
 .main {
     height: 100%;
+    background-image: url("https://www.bookweb.org/files/hankgreen.jpg");
 }
 .social-image{
     width: 30px;
     margin: 15px;
+}
+
+.rightPane{
+    background-image: url("https://cdn.kastatic.org/googleusercontent/D_KhuX5H-HSuS0uPjhP1AqVMViW7IeKn1rWTzLc4OjrSvMvWA_MEbAKzF10_K2u3dgsBlpd9smfWhDXtjMmPWl5H");
+    
+}
+
+@keyframes backGround1{
+    from{
+        background-image:url("https://ih0.redbubble.net/image.106530266.8493/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u7.jpg");
+    }
+    to{
+        background-image: url("https://static.tumblr.com/e7a0a773abf6c9b3221eba0679223457/azovbxc/pNAnca8j5/tumblr_static_tumblr_static_c8u6ue4xab4s0ssg4gwcc0gc0_640.png");
+    }
 }
