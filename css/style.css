@@ -3,12 +3,13 @@ html {
 }
 
 body {
+
     height: 100%;
     color:green;
     background-image:url("https://ih0.redbubble.net/image.106530266.8493/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u7.jpg");
     animation-name: backGround1;
     animation-direction: alternate;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     
 }
@@ -37,4 +38,71 @@ a {
     to{
         background-image: url("https://static.tumblr.com/e7a0a773abf6c9b3221eba0679223457/azovbxc/pNAnca8j5/tumblr_static_tumblr_static_c8u6ue4xab4s0ssg4gwcc0gc0_640.png");
     }
+}
+
+/*@keyframes backGround2{*/
+/*    from{*/
+/*        left: 0px;*/
+/*        top: 0px;*/
+/*    }*/
+/*    to{*/
+    
+/*        left: infinite;*/
+/*        top:infinite;*/
+/*    }*/
+/*}*/
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    background:white;
+    border:double 5px black;
+    
+}
+
+/*.navbar a{*/
+    
+/*}*/
+
+.header{
+    display: flex;
+    justify-content:center;
+    font-size: 25px;
+
+}
+
+.footer{
+    display:flex;
+    justify-content:center;
+    background-color:black;
+
+}
+
+.aboutMain,.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    background-color:white;
+    border:1px black solid;
+}
+
+.gallery{
+    justify-content:space-around;
+
+}
+
+.gallery img{
+    width:200px;
+    height:200px;
+}
+
+.aboutMain{
+    display: flex;
+    flex-wrap:wrap;
+    height:100%;
+}
+
+.rightPane, .leftPane{
+    width:33%;    
+    box-sizing: border-box;
+
 }
