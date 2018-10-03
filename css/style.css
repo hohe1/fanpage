@@ -20,7 +20,24 @@ a {
 .main {
     height: 100%;
     background-image: url("https://www.bookweb.org/files/hankgreen.jpg");
+    background-size:400%;
+
+    animation-name: size;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes size{
+    from1{background-size:400%;}
+    to{background-size:1%;}
+    
+}
+
+
+
+
 .social-image{
     width: 30px;
     margin: 15px;
@@ -51,6 +68,17 @@ a {
 /*        top:infinite;*/
 /*    }*/
 /*}*/
+
+@keyframes excitedState{
+    from{border-color:red;}
+    20%{border-color:orange;}
+    40%{border-color:yellow;}
+    60%{border-color:green;}
+    80%{border-color:blue;}
+    to{border-color:purple;}
+    
+}
+
 
 .navbar{
     display:flex;
@@ -101,8 +129,39 @@ a {
     height:100%;
 }
 
-.rightPane, .leftPane{
-    width:33%;    
+.rightPane, .leftPane,.rightRightPane{
+    width:33.3333%;    
     box-sizing: border-box;
+    border:solid 5px black;
+    
+}
+.rightPane:hover, .leftPane:hover,.rightRightPane:hover{
 
+    animation-name: excitedState;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#aboutAboutText{
+    padding:35px;    
+}
+
+/*gallery thumb nail css. yay.*/
+.thumbnail{
+    border:solid 20px;
+    border-radius:10%;
+    margin:50px;
+    border-bottom-color: red;
+}
+
+.rightPane{
+    background-size:100%;
+
+    animation-name: size;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
 }
